@@ -1,3 +1,9 @@
+let text = document.getElementById("text");
+console.log(text);
+
+function displayMsg() {
+    console.log(`Button Clicked from Function`);
+}
 
 
 
@@ -32,7 +38,7 @@
 
 
 
-
+/* 
 let number = 10; //prompt(`Please Enter Any Number`);
 
 for (let count = 1; count <= 12; count++) {
@@ -229,4 +235,4 @@ document.write("Welcome TIJANI HASSAN");
         countDown(joke);
     }
  }
-countDown(10);
+countDown(10); */
