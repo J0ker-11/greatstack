@@ -5,6 +5,10 @@ function displayMsg() {
     console.log(`Button Clicked from Function`);
 }
 
+let btn = document.getElementById("btn");
+
+btn.addEventListener('click', function(){console.log('I have been clicked');})
+
 
 
 
