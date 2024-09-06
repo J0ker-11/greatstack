@@ -11,6 +11,42 @@ btn.addEventListener('click', function(){console.log('I have been clicked');})
 
 
 
+// One event handler
+// let  Rashida = document.querySelector("#btns");
+// Rashida.onclick = function() {
+//     console.log("Run First Handler");
+// }
+
+//  Rashida.onclick = function () {
+//     console.log("Run Second Handler");
+// }
+
+// Two or more event handler
+
+let  cooker = document.querySelector("#btns");
+cooker.addEventListener('click',function() {
+    console.log("Run First Handler");
+})
+
+cooker.addEventListener('click',function() {
+    console.log("Run Second Handler");
+})
+
+let giftBoxElement = document.getElementById("gift-box");
+let buttonElement = document.getElementById("click-btn");
+
+buttonElement.addEventListener('click', function() {
+    giftBoxElement.classList.remove('hide');
+});
+
+const heading = document.getElementById("main-heading");
+console.log(heading);
+
+const listItems = document.getElementsByClassName("list-items");
+console.log(listItems);
+
+const listItems1 = document.getElementsByTagName("li");
+console.log(listItems1);
 
 
 

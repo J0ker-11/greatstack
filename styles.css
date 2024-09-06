@@ -5,7 +5,49 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #001234;
+}
+
 #text {
     color: green;
     font-size: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+#gift-box {
+    font-size: 5em;
+}
+
+.containers {
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    height: 300px;
+}
+
+#main-heading {
+    margin: 25px auto;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.list {
+    list-style-type: none;
+    color: black;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.list li {
+    background: white;
+    max-width: 90%;
+    border: 1px black solid;
+    margin: auto;
 }
