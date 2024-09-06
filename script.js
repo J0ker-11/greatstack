@@ -40,6 +40,7 @@ buttonElement.addEventListener('click', function() {
 });
 
 const heading = document.getElementById("main-heading");
+heading.style.color = "red";
 console.log(heading);
 
 const listItems = document.getElementsByClassName("list-items");
@@ -47,6 +48,19 @@ console.log(listItems);
 
 const listItems1 = document.getElementsByTagName("li");
 console.log(listItems1);
+
+const listItems2 = document.querySelector(".containers");
+console.log(listItems2);
+
+const listItems3 = document.querySelectorAll("li");
+for (let l = 0; l < listItems3.length; l++) {
+    listItems3[l].style.fontSize = "1.8rem";
+}
+console.log(listItems3);
+
+
+
+
 
 
 
