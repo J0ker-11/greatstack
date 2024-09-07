@@ -39,6 +39,8 @@ buttonElement.addEventListener('click', function() {
     giftBoxElement.classList.remove('hide');
 });
 
+
+  //  FREECODECAMP DOM TUTORIALS
 const heading = document.getElementById("main-heading");
 heading.style.color = "red";
 console.log(heading);
@@ -54,10 +56,16 @@ console.log(listItems2);
 
 const listItems3 = document.querySelectorAll("li");
 for (let l = 0; l < listItems3.length; l++) {
-    listItems3[l].style.fontSize = "1.8rem";
+    listItems3[l].style.fontSize = "1.5rem";
 }
 console.log(listItems3);
 
+
+const ul = document.querySelector("ul");
+const li = document.createElement("li");
+ul.append(li);
+li.innerText = "X-Men";
+li.remove();
 
 
 
