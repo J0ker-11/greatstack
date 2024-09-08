@@ -84,6 +84,22 @@ newBackground.addEventListener('mouseover', changeBackground)
 
 
 
+const revealBtn = document.querySelector(".reveal-btn");
+const hiddenCotent = document.querySelector(".hidden-content");
+
+function revealContent () {
+    if(hiddenCotent.classList.contains('reveal-btn')) {
+        hiddenCotent.classList.remove('reveal-btn')
+    }else{
+        hiddenCotent.classList.add('reveal-btn')
+    }
+}
+
+revealBtn.addEventListener('click', revealContent);
+
+
+
+
 
 
 
