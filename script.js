@@ -1,13 +1,13 @@
-let text = document.getElementById("text");
-console.log(text);
+// let text = document.getElementById("text");
+// console.log(text);
 
-function displayMsg() {
-    console.log(`Button Clicked from Function`);
-}
+// function displayMsg() {
+//     console.log(`Button Clicked from Function`);
+// }
 
-let btn = document.getElementById("btn");
+// let btn = document.getElementById("btn");
 
-btn.addEventListener('click', function(){console.log('I have been clicked');})
+// btn.addEventListener('click', function(){console.log('I have been clicked');})
 
 
 
@@ -23,49 +23,66 @@ btn.addEventListener('click', function(){console.log('I have been clicked');})
 
 // Two or more event handler
 
-let  cooker = document.querySelector("#btns");
-cooker.addEventListener('click',function() {
-    console.log("Run First Handler");
-})
+// let  cooker = document.querySelector("#btns");
+// cooker.addEventListener('click',function() {
+//     console.log("Run First Handler");
+// })
 
-cooker.addEventListener('click',function() {
-    console.log("Run Second Handler");
-})
+// cooker.addEventListener('click',function() {
+//     console.log("Run Second Handler");
+// })
 
-let giftBoxElement = document.getElementById("gift-box");
-let buttonElement = document.getElementById("click-btn");
+// let giftBoxElement = document.getElementById("gift-box");
+// let buttonElement = document.getElementById("click-btn");
 
-buttonElement.addEventListener('click', function() {
-    giftBoxElement.classList.remove('hide');
-});
+// buttonElement.addEventListener('click', function() {
+//     giftBoxElement.classList.remove('hide');
+// });
 
 
-  //  FREECODECAMP DOM TUTORIALS
-const heading = document.getElementById("main-heading");
-heading.style.color = "red";
-console.log(heading);
+//   //  FREECODECAMP DOM TUTORIALS
+// const heading = document.getElementById("main-heading");
+// heading.style.color = "red";
+// console.log(heading);
 
-const listItems = document.getElementsByClassName("list-items");
-console.log(listItems);
+// const listItems = document.getElementsByClassName("list-items");
+// console.log(listItems);
 
-const listItems1 = document.getElementsByTagName("li");
-console.log(listItems1);
+// const listItems1 = document.getElementsByTagName("li");
+// console.log(listItems1);
 
-const listItems2 = document.querySelector(".containers");
-console.log(listItems2);
+// const listItems2 = document.querySelector(".containers");
+// console.log(listItems2);
 
-const listItems3 = document.querySelectorAll("li");
-for (let l = 0; l < listItems3.length; l++) {
-    listItems3[l].style.fontSize = "1.5rem";
+// const listItems3 = document.querySelectorAll("li");
+// for (let l = 0; l < listItems3.length; l++) {
+//     listItems3[l].style.fontSize = "1.5rem";
+// }
+// console.log(listItems3);
+
+
+// const ul = document.querySelector("ul");
+// const li = document.createElement("li");
+// ul.append(li);
+// li.innerText = "X-Men";
+// li.remove();
+
+
+// EVENT LITENER 
+
+const buttonTwo = document.querySelector('.btn-2');
+function alertBtn () {
+    alert('I also Love Javascript');
 }
-console.log(listItems3);
+buttonTwo.addEventListener('click', alertBtn)
+
+const newBackground = document.querySelector('.box-3');
+function changeBackground () {
+    newBackground.style.backgroundColor = "blue";
+}
+newBackground.addEventListener('mouseover', changeBackground)
 
 
-const ul = document.querySelector("ul");
-const li = document.createElement("li");
-ul.append(li);
-li.innerText = "X-Men";
-li.remove();
 
 
 
