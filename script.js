@@ -68,7 +68,7 @@
 // li.remove();
 
 
-// EVENT LITENER 
+// EVENT LISTENER 
 
 const buttonTwo = document.querySelector('.btn-2');
 function alertBtn () {
@@ -89,13 +89,150 @@ const hiddenCotent = document.querySelector(".hidden-content");
 
 function revealContent () {
     if(hiddenCotent.classList.contains('reveal-btn')) {
-        hiddenCotent.classList.remove('reveal-btn')
+        hiddenCotent.classList.toggle('reveal-btn')
     }else{
-        hiddenCotent.classList.add('reveal-btn')
+        hiddenCotent.classList.toggle('reveal-btn')
     }
 }
-
 revealBtn.addEventListener('click', revealContent);
+
+let head = document.querySelector("#container");
+let second = head.querySelectorAll(".second");
+console.log(second);
+
+
+
+// GETTING PARENT NODE OR ELEMENT...
+let sec = document.querySelector(".second");
+console.log(sec.parentElement);
+
+// GETTING CHILD ELEMENT...
+
+let little = document.querySelector(".tittle");
+console.log(little.firstElementChild)
+
+let seconds = document.querySelector(".seconds");
+console.log(seconds.nextElementSibling)
+
+// MANIPULATING DOM 
+
+// 1. CREATING ELEMENT 
+
+let fish = document.createElement("div");
+fish.innerHTML = ("<h1>Home Sweet Home</h1>");
+document.body.appendChild(fish);
+fish.className = ("fish-pie");
+console.log(fish);
+
+
+// 2. APPENDCHILD
+
+let navList = document.querySelector(".nav-list");
+let list = document.createElement("li");
+list.innerHTML = ("Blog");
+navList.appendChild(list);
+navList.setAttribute("class", "new-class")
+console.log(navList);
+console.log(navList.classList);
+navList.classList.add("user", "user2");
+console.log(navList);
+
+
+// 3. INNERHTML, TEXTCONTENT, INNERTEXT
+
+let menu = document.createElement("article");
+menu.innerHTML = ("<h1>My Name Is Tijani Hassan</h1>");
+//menu.innerText = ("<h2>My Name Is Tijani Hassan</h2>");
+//menu.textContent = ("<h3>My Name Is Tijani Hassan</h3>");
+document.body.appendChild(menu);
+
+
+// AFTER() METHOD
+
+list.after("Products");
+
+// APPEND() METHOD
+
+let app = document.querySelector("#app");
+let langs = ["TYPESCRIPT", "HTML", "CSS"];
+
+let nodes = langs.map(langs => {
+    let li = document.createElement("li");
+        li.innerHTML = langs;
+        return li;
+})
+
+app.append(...nodes)
+console.log(app.innerText);
+
+
+// ATTRIBUTES  
+
+// GETING ATTRIBUTES
+let inputBox = document.querySelector("#username");
+console.log(inputBox.getAttribute("placeholder"));
+
+
+// SET ATTRIBUTES
+
+inputBox.setAttribute("class", "user");
+console.log(inputBox);
+
+// HAS ATTRIBUTES
+console.log(inputBox.hasAttribute("id"));
+
+// REMOVE ATTRIBUTES
+
+// inputBox.removeAttribute("placeholder");
+console.log(inputBox);
+
+
+//MANIPULATING ELEMENT STYLES
+
+// STYLING PROPERTIES
+
+inputBox.style.backgroundColor = "blue";
+inputBox.style.padding = "10px";
+
+
+// CSS TEXT 
+inputBox.style.cssText += "width: 300px; height: 200px"
+
+
+// GETTING COMPUTED STYLE() METHOD
+
+
+
+// CLASSNAME PROPERTY
+
+// EVENT HANDLER
+
+function displayTxt () {
+    console.log("Button Clicked from function");
+}
+
+let btns2 = document.querySelector(".btn-5");
+btns2.onclick = function right() {
+    console.log("Buttion was clicked");
+}
+
+
+let btns4 = document.querySelector(".btn-5");
+function displayMsgs() {
+    console.log("Button was clicked again");
+}
+btns4.addEventListener("click", displayMsgs)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
@@ -103,7 +104,6 @@ button {
     height: 200px;
 }
 
-
 .hidden-content {
     display: none; 
     font-size: 1.2rem;
@@ -121,4 +121,23 @@ button {
     display: block;
     text-align: center;
     align-content: center;
+}
+
+
+@media (max-width: 320px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #main-heading {
+       /*  color: white;
+        text-align: center;
+        margin-top: 90px; */
+        font-size: 3rem;
+    }
+
+    .reveal-btn {
+        width: 85%;
+        height: 100px;
+    } 
 }
